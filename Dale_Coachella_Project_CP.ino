@@ -28,14 +28,14 @@ enum FadeDirection {FORWARD, REVERSE};
 
 const int longPressDuration = 750; // duration of a long press in milliseconds
 const int brightnessLevels = 3; //defines how many brightness levels will be used
-const int minBrightness = 80; //defines the lowest brightness level from 0-255
-const int maxBrightness = 180; //defines the maximum brightness level from 0-255
+const int minBrightness = 30; //defines the lowest brightness level from 0-255, low starting point is more pleasing
+const int maxBrightness = 255; //defines the maximum brightness level from 0-255
 
 // variables will change:
 int
 buttonState = 0,             // variable for reading the pushbutton status
 lastButtonState = 0,     // variable for tracking the last button status
-currentBrightness = 80;        // keeps track of the current color that is displayed for fading purposes
+currentBrightness = 30;        // keeps track of the current color that is displayed for fading purposes
 
 // the following variables are long's because the time, measured in miliseconds,
 // will quickly become a bigger number than can be stored in an int.
